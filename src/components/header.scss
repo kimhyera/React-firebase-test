@@ -1,0 +1,13 @@
+//
+// Base
+//
+@import '../assets/scss/functions';
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.header {
+	background: #fff;
+	padding: em(20) 0;
+	text-align: center;
+	box-shadow: $box-shadow;
+}

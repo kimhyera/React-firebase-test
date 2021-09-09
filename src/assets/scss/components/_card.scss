@@ -1,0 +1,88 @@
+/* Cards */
+$card-bg: #fff;
+$card-padding-y: 40px;
+$card-padding-x: 40px;
+$card-dropshadow: 0 0 0 0 rgb(90, 113, 208 / 1.1), 0 4px 16px 0 rgb(167, 175, 183 / 3.3);
+.card {
+	border: none;
+
+	-webkit-box-shadow: $card-dropshadow;
+
+	box-shadow: $card-dropshadow;
+	border: solid 1px $border;
+	border-radius: 0px;
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+
+	.card-body {
+		padding: $card-padding-y $card-padding-x;
+
+		&.no-gutter {
+			padding: 0;
+		}
+
+		+ .card-body {
+			padding-top: 0;
+		}
+	}
+
+	&.card-rounded {
+		border-radius: 5px;
+	}
+
+	&.card-faded {
+		background: #b5b0b2;
+		border-color: #b5b0b2;
+	}
+
+	.card-subtitle {
+		color: rgba($body-color, 0.7);
+	}
+
+	&.card-no-shadow {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.card-title {
+		font-weight: 500;
+		color: #212229;
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+
+	.card-subtitle {
+		color: #212229;
+		font-size: 16px;
+	}
+
+	.card-des {
+		color: #212229;
+	}
+}
+.card-title-outside {
+	font-weight: 500;
+	color: #212229;
+	font-size: 20px;
+	margin-bottom: 20px;
+	padding-left: em(15);
+}
+
+.stretch-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-webkit-box-pack: stretch;
+	-ms-flex-pack: stretch;
+	justify-content: stretch;
+
+	> .card {
+		width: 100%;
+		min-width: 100%;
+	}
+}

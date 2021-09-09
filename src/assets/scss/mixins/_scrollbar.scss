@@ -1,0 +1,63 @@
+//스크롤
+@mixin row_scroll($max_width: false, $con_min_width: false) {
+  // 스크린값 , 컨텐츠값
+
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0 0 20px 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (max-width: $max_width) {
+    width: 100%;
+    padding: 0 0 8px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    > table,
+    > img,
+    > * {
+      width: 100%;
+      min-width: $con_min_width;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #999;
+  }
+}
+
+@mixin col_scroll($track: #fff, $thumb: #999) {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: $track;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: $track;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $thumb;
+  }
+}

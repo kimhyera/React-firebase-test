@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151.887" height="60.857" viewBox="0 0 151.887 60.857">
+    <defs>
+        <filter id="vb6imapita" width="151.887" height="60.857" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="1.5"/>
+            <feFlood flood-color="#bebebe"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g filter="url(#vb6imapita)">
+        <path fill="#ffefef" stroke="#a8a8c7" d="M210.564 73.313H68.929V34.082a11.627 11.627 0 0 1 11.626-11.626h95.721A19.487 19.487 0 0 1 194.25 34.41z" transform="translate(-63.93 -17.46)"/>
+    </g>
+</svg>

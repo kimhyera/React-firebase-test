@@ -1,0 +1,60 @@
+@charset "UTF-8";
+//
+// Base
+//
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+//wrap
+.site-url-section {
+	padding: em(40);
+}
+.pos-size-none {
+	margin: 0 auto;
+	//height: auto;
+
+	@include col_scroll(#ececef, #c9cadc);
+}
+
+//guide
+
+.bg-contents {
+	background: #f3f3f3;
+}
+
+/**
+* Colors Example
+*/
+.box-color {
+	padding: 15px 15px;
+	text-align: left;
+	border-radius: 9px;
+	max-width: 200px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-ms-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+
+.box-color > * {
+	color: inherit;
+}
+
+.box-color + .box-color {
+	margin-top: 20px;
+}
+pre,
+.pre {
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: #f8f9fa;
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 300;
+}
+
+.popup,
+.popup-alert {
+	position: fixed;
+}

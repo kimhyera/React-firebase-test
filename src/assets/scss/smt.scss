@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*
+ * File       : smt.css
+ * Author     : khr
+ * Guideline  : HRstyle.1.0
+ *
+ * Dependency : _variables.scss
+ * Dependency : _mixin.scss
+ *
+ * SUMMARY:
+ * guide 
+ * contents
+
+ */
+
+//
+// Base
+//
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+/* guide ======================================================= */
+
+body {
+	width: 914px;
+	height: 560px;
+	background: #d2d2d2;
+}
+
+#posView {
+	background: #fff;
+	padding-right: 4px;
+}
+.pos-body {
+	padding: 0;
+}
+
+//테이블
+table {
+	.value-view {
+		padding-left: 8px;
+	}
+	.inner-row {
+		> [class^='col-'] {
+			@include display-flex;
+
+			@include align-items(center);
+			@include justify-content(space-between);
+		}
+
+		.col-th {
+			width: 80px;
+			height: 33px;
+			line-height: 33px;
+
+			border-radius: 5px;
+			background-color: #f5f6f8;
+			text-align: center;
+		}
+		.col-td {
+			@include flex-col;
+			margin-left: 6px;
+		}
+	}
+}
+
+button,
+[class*='button-'] {
+	&.sm {
+		width: 40px;
+		padding: 0;
+	}
+}
+
+.table-form.padding-lg td {
+	padding-right: 10px;
+}

@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*
+ * File       : layout.css
+ * Author     : khr
+ * Guideline  : HRstyle.1.0
+ *
+ * Dependency : _variables.scss
+ * Dependency : _mixin.scss
+ *
+ * SUMMARY:
+ * 01) Global 
+ * 02) Skipe
+ * 03) Header
+ * 04) footer
+ * 05) Scroll TOP
+ * 06) Container
+ * 07) Page , Section
+ * 08) Search
+ * 09) Privacy
+ * 10) 404
+ */
+
+/*  01) Global ======================================================= */
+html {
+	line-height: 1.5; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	word-break: keep-all;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $font-family-main;
+
+	font-family: Dotum;
+	font-size: 14px;
+
+	color: $text;
+}
+
+body {
+	background-position: center 0;
+	background-repeat: no-repeat;
+}
+
+//utils
+.border-deco {
+	border-bottom: 1px solid $border;
+	display: block;
+
+	&:after {
+		content: '';
+		display: block;
+		border-bottom: 1px solid #fff;
+	}
+
+	&.divider-block {
+		margin: 42px 0;
+	}
+
+	&.divider-block-xs {
+		margin: 16px 0;
+	}
+}
+
+.border-deco-text {
+	position: relative;
+	padding-bottom: 10px;
+	&:before {
+		content: '';
+		display: block;
+		border-bottom: 1px solid $border;
+		position: absolute;
+		left: 0;
+		bottom: 11px;
+		width: 100%;
+	}
+	&:after {
+		content: '';
+		display: block;
+		border-bottom: 1px solid #fff;
+		margin-top: 10px;
+	}
+
+	&.divider-block {
+		margin: 42px 0;
+	}
+
+	&.divider-block-xs {
+		margin: 16px 0;
+	}
+}
+
+//font-size
+.fs-11 {
+	font-size: 11px;
+}
+.fs-12 {
+	font-size: 12px;
+}
+.fs-13 {
+	font-size: 13px;
+}
+.fs-14 {
+	font-size: 14px;
+}
+.fs-15 {
+	font-size: 15px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+
+//리스트
+
+.search-result-wrap {
+	.text-result {
+		margin-bottom: 30px;
+	}
+	.table-custom {
+		tbody {
+			td {
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+/*  02) skip ======================================================= */
+.skip {
+	.link {
+		text-indent: -9999px;
+		font-size: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		&:focus {
+			background-color: #008;
+			color: #fff;
+			text-align: center;
+			z-index: 10000;
+			text-indent: 0;
+			font-size: rem(15);
+			width: 100%;
+			min-width: 1250px;
+			height: rem(30);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+/* 03) Header ======================================================= */
+
+/* 04) footer ======================================================= */
+
+/* 05) Scroll TOP ======================================================= */
+/* 06) Container ======================================================= */
+
+.wrapper-md {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding-left: rem(15);
+	padding-right: rem(15);
+}
+/* 07) Page , Section ======================================================= */
+
+.section:not(.fullwidth-page) {
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+.fullwidth-page {
+	&.login-page {
+		background: #f5f6f8;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 98vh;
+	}
+}
+
+.contents {
+	padding: em(40) 0;
+	min-height: 300px;
+}
+
+/* 08) Search ======================================================= */
+/* 09) Privacy ======================================================= */
+/* 10) 404 ======================================================= */
+.error404 {
+	.main-container {
+		padding-bottom: 0;
+	}
+
+	.go-top {
+		display: none;
+	}
+}
+
+.error_404 {
+	position: relative;
+	height: -webkit-calc(100vh - 401rem * 1);
+	height: calc(100vh - 401rem * 1);
+	padding: 0;
+	display: table;
+	width: 100%;
+	min-height: 540rem;
+	-webkit-transition: height 0.1s;
+	transition: height 0.1s;
+}
+
+.error_404_container {
+	position: relative;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 18rem;
+
+	h1 {
+		font-size: 72rem;
+		font-family: 'Montserrat', 'NotoSansKR', sans-serif;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+		line-height: 1.2;
+		color: #00101d;
+
+		span {
+			color: #1289e3;
+		}
+	}
+
+	p {
+		font-size: 18rem;
+		font-weight: 500;
+		color: #888888;
+		line-height: 1.73;
+		letter-spacing: -0.025em;
+		padding-top: 5rem;
+		padding-bottom: 46rem;
+	}
+}
+
+//toggle
+.collapse {
+	display: none;
+}
+
+.active[data-toggle='collapse'] {
+	i {
+		display: inline-block;
+		transform: rotate(180deg);
+	}
+}

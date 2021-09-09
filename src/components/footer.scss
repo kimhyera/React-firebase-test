@@ -1,0 +1,12 @@
+//
+// Base
+//
+@import '../assets/scss/functions';
+@import '../assets/scss/variables';
+@import '../assets/scss/mixins';
+
+.footer {
+	background: #ccc;
+	padding: em(20) 0;
+	text-align: center;
+}

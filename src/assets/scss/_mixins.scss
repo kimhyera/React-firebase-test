@@ -1,0 +1,76 @@
+@charset "UTF-8";
+// Utilities
+
+@import 'mixins/background-variant';
+@import 'mixins/hover';
+@import 'mixins/breakpoints';
+@import 'mixins/deprecate';
+@import 'mixins/reset-text';
+@import 'mixins/text-emphasis';
+@import 'mixins/text-hide';
+@import 'mixins/gradient-bg';
+@import 'mixins/border-radius';
+@import 'mixins/box-shadow';
+
+// // Components
+@import 'mixins/bullets';
+@import 'mixins/kakao-map';
+@import 'mixins/spacing';
+@import 'mixins/links';
+@import 'mixins/buttons';
+@import 'mixins/groups';
+@import 'mixins/grid-spacing'; //위아래 여백
+@import 'mixins/scrollbar'; //스크롤바
+@import 'mixins/caret'; //caret 드롭다운
+@import 'mixins/forms';
+@import 'mixins/img-to-bg';
+// // Layout
+@import 'mixins/clearfix';
+@import 'mixins/grid';
+@import 'mixins/grid-framework';
+@import 'mixins/d-flex';
+
+//add
+
+@mixin placeholder($color) {
+	// Placeholder
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&::-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+	&::-ms-input-placeholder {
+		color: $color;
+	}
+	&::placeholder {
+		color: $color;
+	}
+}
+
+//리스트 텍스트
+
+//line 1줄인경우
+// @include ellipsis;
+//line 2줄이상인경우
+// ex) @include ellipsis(40,2)
+@mixin ellipsis($height: null, $line: 1) {
+	@if ($line==1) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+	} @else {
+		height: #{$height}px;
+		$line-height: unquote(($height / $line) + px);
+		line-height: $line-height;
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: $line;
+	}
+}

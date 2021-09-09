@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*
+ * File       : smt.css
+ * Author     : khr
+ * Guideline  : HRstyle.1.0
+ *
+ * Dependency : _variables.scss
+ * Dependency : _mixin.scss
+ *
+ * SUMMARY:
+ * guide 
+ * contents
+
+ */
+
+//
+// Base
+//
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+/* guide ======================================================= */
+
+body {
+	width: 1000px;
+	height: 660px;
+}
+
+.pos-body {
+	padding: 4px 4px 8px;
+
+	height: 100%;
+}
+
+.pos-body .contents-round {
+	border-radius: 15px;
+}
+
+.pos-body .contents {
+	width: 992px;
+	height: 648px;
+	margin-top: 0;
+
+	padding-top: 14px;
+}
+
+// 테이블
+
+$table-bg-th: #f7f7f9;
+$table-bg-1: #eff2f7;
+$table-bg-2: #f8f9fa;
+$table-bg-hover: $primary;
+$table-bg-active: $table-bg-hover;
+$table-td-border-color: #eff2f7;
+
+$table-border-color: #ececef;
+
+.table-custom-notice {
+	width: 100%;
+	border: 1px solid #c9cadc;
+	background: none;
+	text-align: left;
+	background: #fff;
+	table-layout: fixed;
+
+	th,
+	td {
+		color: $text;
+		line-height: 1.4;
+	}
+
+	th {
+		background-color: $table-bg-th;
+		padding: 11px 5px 11px;
+	}
+	td {
+		padding: 11px 5px 11px;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	thead th {
+		background: $table-bg-th;
+		position: relative;
+		font-weight: 400;
+
+		font-family: $font-family-main;
+	}
+	tbody {
+		tr {
+			td {
+				border-bottom: 1px solid #ececef;
+				.type {
+					color: $primary;
+					font-weight: 700;
+					margin-right: 5px;
+				}
+				a {
+					&:hover {
+						text-decoration: underline !important;
+					}
+				}
+			}
+
+			&:last-child td {
+				border-bottom: 0;
+			}
+		}
+	}
+}

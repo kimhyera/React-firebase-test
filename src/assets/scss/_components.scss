@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/*
+ * File       : ui-componets.css
+ * Author     : STUDIO-JT (NICO)
+ *
+ * Dependency : css/reset.css
+ *
+ * SUMMARY:
+ * 01) BUTTON
+ * 02) FORM
+ * 03) CATEGORY
+ * 04) SEARCH
+ * 05) PAGINATION
+ * 06) SINGLE PAGINATION
+ * 07) ATTACHMENTS
+ * 08) JT LIST COMPONENT
+ * 09) JT COMING SOON
+ * 10) JT SHARE
+ * 11) JT LOADMORE
+ * 12) JT Alert
+ * 13) TABS
+ * 14) NICESCROLL
+ * 15) MAGNIFIC POPUP
+ * 16) SPLIT WORD
+ * 17) SINGLE
+ * 18) SINGLE COMPONENT
+ * 19) SINGLE GUTEMBERG
+ * 20) A11Y
+ * 21) LAZYLOAD
+ * 22) JT ACCORDION LIST
+ */
+
+/* 1) Reaset*/
+
+// Button General Styles
+
+.button {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	background-color: #fff;
+
+	border: 1px solid;
+	width: 111px;
+	height: $input-height;
+	line-height: ($input-height - 2px);
+	font-size: 14px;
+
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: 250ms all ease-in-out;
+	-o-transition: 250ms all ease-in-out;
+	transition: 250ms all ease-in-out;
+}
+
+.button-block {
+	display: block;
+	width: 100%;
+}
+
+//
+// Appearance style
+//
+
+.button-default {
+	color: #fff;
+	background-color: #333;
+	border-color: $border;
+	&:hover,
+	&:active {
+		color: #ddd;
+		background-color: #ddd;
+		border-color: #ddd;
+	}
+}
+
+.button-a {
+	border-color: $button-a;
+	color: $button-a;
+	background-color: #fff;
+
+	&:hover,
+	&:active {
+		background-color: $button-a;
+		color: #fff;
+	}
+}
+
+.button-b {
+	border-color: #c8c9ce;
+	color: $button-b;
+
+	&:hover,
+	&:active {
+		background-color: $button-b;
+		border-color: $button-b;
+		color: #fff;
+	}
+}
+
+.button-c {
+	border-color: #c8c9ce;
+	color: $button-c;
+
+	&:hover,
+	&:active {
+		background-color: $button-c;
+		border-color: $button-c;
+		color: #fff;
+	}
+}
+
+.button-budisabled {
+	cursor: default;
+}
+
+.button-ghost {
+	border: 0;
+	background-color: transparent;
+
+	&:hover {
+		color: $white;
+		background: $primary;
+	}
+}
+
+// Btn with shadow
+.button-shadow {
+	-webkit-box-shadow: 0 9px 21px 0 rgba($gray-c, 0.15);
+	box-shadow: 0 9px 21px 0 rgba($gray-c, 0.15);
+
+	&:hover {
+		-webkit-box-shadow: 0 9px 10px 0 rgba($gray-c, 0.15);
+		box-shadow: 0 9px 10px 0 rgba($gray-c, 0.15);
+	}
+
+	&:focus,
+	&:active {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+//
+// Button effects
+//
+
+//
+// Button Sizes
+//
+
+.button-xs {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+}
+
+.button-sm {
+	min-width: auto;
+	width: 75px;
+}
+
+.button-md {
+	min-width: 140px;
+}
+
+.button-lg {
+	min-width: 180px;
+}
+
+//
+// Button Shapes
+//
+
+.button-circle {
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.button-round-1 {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+//
+// Button Icon styles
+//
+.button {
+	&.button-icon {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: -webkit-inline-flex;
+		display: inline-flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		vertical-align: middle;
+
+		.icon {
+			position: relative;
+			display: inline-block;
+			top: -1px;
+			vertical-align: middle;
+			color: inherit;
+			font-size: 14px;
+			line-height: 1;
+		}
+
+		&-left {
+			.icon {
+				padding-right: 8px;
+			}
+		}
+
+		&-right {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+			.icon {
+				padding-left: 8px;
+			}
+		}
+
+		&.button-link {
+			.icon {
+				top: 5px;
+				font-size: 1em;
+			}
+		}
+
+		&.button-xs {
+			.icon {
+				top: 0.05em;
+				font-size: 1.2em;
+				padding-right: 8px;
+			}
+
+			.button-icon-right {
+				padding-left: 8px;
+			}
+		}
+
+		&.button-facebook,
+		&.button-twitter,
+		&.button-google {
+			.icon {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.button-del {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	line-height: 22px;
+	text-align: center;
+	border: 1px solid #707070;
+	background-color: #fff;
+	i {
+		font-size: 12px;
+		font-weight: 100;
+	}
+	&:hover {
+		background: #707070;
+		color: #fff;
+	}
+}
+
+.control-del-warp {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	.button-del {
+		margin-left: 5px;
+	}
+}
+
+.button-search-close {
+	text-align: center;
+	border: solid 1px $border;
+	background-color: #ffffff;
+}
+
+.search-form-button-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}

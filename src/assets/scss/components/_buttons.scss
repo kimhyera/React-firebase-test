@@ -1,0 +1,343 @@
+/*
+*
+* Buttons
+*/
+
+// Button General Styles
+
+.button,
+[class*='button'] {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: 250ms background, color ease-in-out;
+	-o-transition: 250ms background, color ease-in-out;
+	transition: 250ms background, color ease-in-out;
+	font-size: 12px;
+	border: 1px solid;
+	width: 80px;
+	height: 33px;
+	line-height: (33px - 2px);
+	border-radius: 6px;
+	color: #2a2a41;
+	// padding: 0 24px;
+	font-weight: 300;
+}
+
+.button-block {
+	display: block;
+	width: 100%;
+}
+
+//
+// Appearance style
+//
+
+.button-default {
+	color: #fff;
+	background-color: #333;
+	border-color: $border;
+	&:hover,
+	&.active {
+		color: #ddd;
+		background-color: #ddd;
+		border-color: #ddd;
+	}
+}
+
+.button-a {
+	border-color: #9292c6;
+	background-color: #fff;
+	box-shadow: 0 0 3px 0 #d2d2d2;
+
+	&:hover,
+	&.active {
+		background-color: $secondary;
+		border-color: $secondary;
+		color: #fff;
+		box-shadow: 0 0 3px 0 rgba(210, 210, 210, 0);
+	}
+}
+
+.button-a-revers {
+	background-color: #6c6c95;
+	border-color: #6c6c95;
+	color: #fff;
+
+	&:hover,
+	&:active {
+		color: #6c6c95;
+		background-color: #fff;
+		border-color: #9292c6;
+	}
+}
+
+.button-b {
+	color: #fff;
+	background-color: $secondary;
+}
+
+.button-c {
+	border-color: #c8c9ce;
+	color: $button-c;
+
+	&:hover,
+	&:active {
+		background-color: $button-c;
+		border-color: $button-c;
+		color: #fff;
+	}
+}
+
+.button-budisabled {
+	cursor: default;
+}
+
+// Btn with shadow
+.button-shadow {
+	-webkit-box-shadow: 0 9px 21px 0 rgba($gray-c, 0.15);
+	box-shadow: 0 9px 21px 0 rgba($gray-c, 0.15);
+
+	&:hover {
+		-webkit-box-shadow: 0 9px 10px 0 rgba($gray-c, 0.15);
+		box-shadow: 0 9px 10px 0 rgba($gray-c, 0.15);
+	}
+
+	&:focus,
+	&:active {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+[class*='button-'] {
+	&.button-modify,
+	&.button-option,
+	&.button-del {
+		border-color: #9292c6;
+		background-color: #fff;
+		box-shadow: 0 0 3px 0 #d2d2d2;
+
+		width: 47px;
+		padding: 0;
+
+		&:hover,
+		&.active {
+			background-color: #ff8e8b;
+			border-color: #ff8e8b;
+			color: #fff;
+			box-shadow: 0 0 3px 0 rgba(210, 210, 210, 0);
+		}
+
+		&.xs {
+			font-size: 11px;
+			height: 27px;
+			line-height: 26px;
+			width: 38px;
+			padding: 0;
+		}
+	}
+}
+
+[class*='button-'].button-option {
+	width: 99px;
+}
+.button-del.md {
+	width: 99px;
+}
+//
+// Button Sizes
+//
+
+button,
+[class*='button-'] {
+	&.xs {
+		font-size: 11px;
+		height: 25px;
+		line-height: 23px;
+		width: 74px;
+		padding: 0;
+	}
+	&.lg {
+		width: auto;
+		min-width: 120px;
+		height: 42px;
+		line-height: 40px;
+		font-size: 14px;
+		// letter-spacing: 1px;
+		padding: 0 15px;
+		border-radius: 10px;
+	}
+
+	&.sm {
+		width: 47px;
+		padding: 0;
+	}
+}
+
+//
+// Button Shapes
+//
+
+.button-circle {
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.button-round-1 {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+//
+// Button Icon styles
+//
+
+.button,
+[class*='button-'] {
+	&.button-icon {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: -webkit-inline-flex;
+		display: inline-flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		-webkit-align-items: center;
+		align-items: center;
+		vertical-align: middle;
+
+		i {
+			position: relative;
+			display: inline-block;
+			top: 0;
+			vertical-align: middle;
+			font-size: 10px;
+			line-height: 1;
+			font-weight: 800;
+			margin-right: 3px;
+			width: 11px;
+			height: 11px;
+		}
+
+		&-left {
+			.icon {
+				padding-right: 8px;
+			}
+		}
+
+		&-right {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: reverse;
+			-ms-flex-direction: row-reverse;
+			-webkit-flex-direction: row-reverse;
+			flex-direction: row-reverse;
+			.icon {
+				padding-left: 8px;
+			}
+		}
+
+		&.button-link {
+			.icon {
+				top: 5px;
+				font-size: 1em;
+			}
+		}
+
+		&.button-xs {
+			.icon {
+				top: 0.05em;
+				font-size: 1.2em;
+				padding-right: 8px;
+			}
+
+			.button-icon-right {
+				padding-left: 8px;
+			}
+		}
+
+		&.button-facebook,
+		&.button-twitter,
+		&.button-google {
+			.icon {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.button-social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	@include group(14px, 14px);
+
+	> * {
+		min-width: 175px;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+	}
+
+	* + .button {
+		margin-top: 0;
+	}
+}
+
+.button-width-170 {
+	min-width: 170px;
+}
+
+.control-del-warp {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	.button-del {
+		margin-left: 5px;
+	}
+}
+
+.button-search-close {
+	text-align: center;
+	border: solid 1px $border;
+	background-color: #ffffff;
+}
+
+.search-form-button-row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}

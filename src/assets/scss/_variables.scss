@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/*
+ * File       : _variables.scss
+ * Author     : khr
+ *
+ * Dependency : _variables.scss, _mixin.scss 
+ *
+ * SUMMARY:
+* 01) Color system
+* 02) Body (Font, line-height,and color for body text, headings, and more.)
+* 03) breakpoints 
+* 04) Clearfix
+* 05) Display
+* 06) Embed
+* 07) Flex
+* 08) Float
+* 09) Interactions
+* 10) Overflow
+* 11) Position
+* 12) Screenreaders
+* 13) Sizing
+* 14) Spacing
+* 15) Stretched-link
+* 16) Text
+* 17) Visibility
+* 18) Section
+* 19) Shadow
+* 20) grid
+ */
+
+/* 01) color system ================================================== */
+
+$text: #2a2a41 !default;
+$text-sub: #6d6d6d !default;
+$common: #b5b6be !default;
+$primary: #3f51b5 !default;
+$secondary: #ff8e8b !default;
+$secondary-2: #a8a8c7 !default;
+$over: #707070 !default;
+// Accent colors
+$state-1: #0088ff !default;
+$state-2: #27b91c !default;
+$state-3: #ff0000 !default;
+$danger: #ff0000 !default;
+$dark: #333 !default;
+$bg: #f4f4f7 !default;
+$table-bg: #f7f7f9 !default;
+$table-border: #bebebe !default;
+$table-border-2: #c9cadc !default;
+$border: #d7dbde;
+$input-border-color: #c6cacd;
+
+$button-a: #9292c6 !default;
+$button-b: $secondary !default;
+$button-c: #b4b4b4 !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+	(
+		'text': $text,
+		'text-sub': $text-sub,
+		'common': $common,
+		'primary': $primary,
+		'secondary': $secondary,
+		'secondary-2': $secondary-2,
+		'bg': $bg,
+		'over': $over,
+		'danger': $danger,
+		'state-1': $state-1,
+		'state-2': $state-2,
+		'state-3': $state-3,
+		'dark': $dark,
+		'button-a': $button-a,
+		'button-b': $button-b,
+		'button-c': $button-c,
+	),
+	$theme-colors
+);
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+// enable
+$media-query-enable: true !default;
+$black: #000 !default;
+$gray-1: #111 !default;
+$gray-2: #222 !default;
+$gray-3: #333 !default;
+$gray-4: #444 !default;
+$gray-5: #555 !default;
+$gray-6: #666 !default;
+$gray-7: #777 !default;
+$gray-8: #888 !default;
+$gray-9: #999 !default;
+$gray-a: #aaa !default;
+$gray-b: #bbb !default;
+$gray-c: #ccc !default;
+$gray-d: #ddd !default;
+$gray-e: #eee !default;
+$white: #fff !default;
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+	(
+		'gray-0': $black,
+		'gray-1': $gray-1,
+		'gray-2': $gray-2,
+		'gray-3': $gray-3,
+		'gray-4': $gray-4,
+		'gray-5': $gray-5,
+		'gray-6': $gray-6,
+		'gray-7': $gray-7,
+		'gray-8': $gray-8,
+		'gray-9': $gray-9,
+		'gray-a': $gray-a,
+		'gray-b': $gray-b,
+		'gray-c': $gray-c,
+		'gray-d': $gray-d,
+		'gray-e': $gray-e,
+		'gray-f': $white,
+	),
+	$grays
+);
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #5cb85c !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+	(
+		'blue': $blue,
+		'indigo': $indigo,
+		'purple': $purple,
+		'pink': $pink,
+		'red': $red,
+		'orange': $orange,
+		'yellow': $yellow,
+		'green': $green,
+		'teal': $teal,
+		'cyan': $cyan,
+		'white': $white,
+		'gray': $gray-6,
+		'gray-dark': $gray-8,
+	),
+	$colors
+);
+
+/* 02) Body (Font, line-height,and color for body text, headings, and more.)================================================== */
+
+//wrap
+$wrapper: 1846px;
+
+//color
+$body-bg: $white;
+$body-color: $text-sub;
+
+// Header Layout
+$nav-height: rem(100); //네비 높이
+$nav-height-lg: 60px; //네비 높이(lg미만)
+//fonts
+$font-family-main: 'Spoqa Han Sans', 'sans-serif' !default;
+$font-family-sub: Dotum, 'sans-serif' !default;
+$font-family-sec: $font-family-main;
+//font size
+$font-size-base: 12px !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+//font weight
+$font-weight-thin: 100 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 900 !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1.5 !default;
+
+// Icon Fonts
+$fa: 'FontAwesome';
+$mdi: 'Material Design Icons';
+$mi: 'Material Icons';
+
+//transition
+$transition-base: all 0.2s ease-in-out !default;
+$transition-fade: opacity 0.15s linear !default;
+$transition-collapse: height 0.35s ease !default;
+// Spacing
+//
+// Spacer Unit : 4 == 4px ( 여백 단위 변수 )
+// Spacer Max : 20 == 80px ( 여백 최대값 )
+$spacer: 1rem !default;
+$spacerUnit: 4;
+$spacerMax: 40;
+$spacers: () !default;
+@for $i from 0 through $spacerMax {
+	$spacers: map-merge((#{$i}: $spacer * ($i/$spacerUnit)), $spacers);
+}
+
+//heading
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$heading-sizes: (
+	h1: $h1-font-size,
+	h2: $h2-font-size,
+	h3: $h3-font-size,
+	h4: $h4-font-size,
+	h5: $h5-font-size,
+	h6: $h6-font-size,
+) !default;
+
+$headings-margin-bottom: $spacer / 2 !default;
+$headings-font-family: null !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+/* 03) Border ================================================== */
+
+$border-width: 1px !default;
+$border-color: #d7dbde !default;
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.2rem !default;
+
+/* 04) Form ================================================== */
+
+$input-height: 33px;
+
+// Buttons
+
+$input-btn-padding-y: 10px;
+$input-btn-padding-x: 16px;
+$input-btn-font-size: 16px;
+$input-btn-line-height: 1.34;
+
+$input-btn-padding-y-xs: 5px;
+$input-btn-padding-x-xs: 10px;
+$input-btn-line-height-xs: 1.5;
+
+$input-btn-padding-y-sm: 8px;
+$input-btn-padding-x-sm: 20px;
+$input-btn-line-height-sm: 1.5;
+
+$input-btn-padding-y-md: 12px;
+$input-btn-padding-x-md: 23px;
+$input-btn-line-height-md: 1.5;
+
+$input-btn-padding-y-lg: 20px;
+$input-btn-padding-x-lg: 33px;
+$input-btn-line-height-lg: 1.33;
+
+$btn-box-shadow: 0;
+$btn-focus-box-shadow: 0;
+$btn-active-box-shadow: 0;
+$btn-link-disabled-color: $button-c;
+
+$btn-block-spacing-y: 0.5rem;
+
+$btn-border-radius: $border-radius;
+$btn-border-radius-lg: $border-radius-lg;
+$btn-border-radius-sm: $border-radius-sm;
+
+$btn-transition: all 0.15s ease-in-out;
+
+/* 05) breakpoints ================================================== */
+
+//
+// Size Max : 100 == 100% ( 너비 최대값 )
+$sizeMax: 100;
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 0 through $sizeMax {
+	$sizes: map-merge((#{$i}: $i * 1%), $sizes);
+}
+
+// Font Size breakpoints
+$font-size-breakpoints: (
+	xxxs: 14px,
+	xs: 14px,
+	sm: 14px,
+	md: 14px,
+	lg: 14px,
+	xl: 14px,
+) !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xxxs: 0,
+	xxs: 320px,
+	xs: 375px,
+	sm: 576px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1400px,
+	xxxl: 1600px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+	xs: 576px,
+	sm: 768px,
+	md: 1024px,
+	lg: 1200px,
+) !default;
+
+@include _assert-ascending($container-max-widths, '$container-max-widths');
+
+/* 06) guid ================================================== */
+$enable-grid-classes: true;
+$grid-columns: 12 !default;
+$grid-gutter-width: 20px !default;
+$grid-row-columns: 6 !default;
+
+/* 07) Display ================================================== */
+
+// Options
+$enable-gradients: true !default;
+$enable-deprecation-messages: true !default;
+
+// Components
+$rounded-pill: 50rem !default;
+
+$embed-responsive-aspect-ratios: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$embed-responsive-aspect-ratios: join(((21 9), (16 9), (4 3), (1 1)), $embed-responsive-aspect-ratios);
+
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 3.5rem !default;
+
+$display1-weight: 300 !default;
+$display2-weight: 300 !default;
+$display3-weight: 300 !default;
+$display4-weight: 300 !default;
+$display-line-height: $headings-line-height !default;
+
+$hr-border-color: rgba($black, 0.1) !default;
+$hr-border-width: 1px !default;
+
+$mark-padding: 0.2em !default;
+
+$mark-bg: #fcf8e3 !default;
+$hr-margin-y: $spacer !default;
+
+/* 08) z-index ================================================== */
+$zindex-dropdown: 1000 !default;
+$zindex-sticky: 1020 !default;
+$zindex-fixed: 1030 !default;
+$zindex-modal-backdrop: 1040 !default;
+$zindex-modal: 1050 !default;
+$zindex-popover: 1060 !default;
+$zindex-tooltip: 1070 !default;
+
+/* 09) Utilities - class name 생성됨 ================================================== */
+$displays: none, inline, inline-block, block, table, table-caption, table-column, table-column-group, table-header-group, table-footer-group, table-row-group, table-row, table-cell, flex, inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+$user-selects: all, auto, none !default;
+
+// Functions
+$yiq-contrasted-threshold: 150 !default;
+$yiq-text-dark: $gray-1 !default;
+$yiq-text-light: $white !default;
+
+/* 10) components ================================================== */
+$tooltip-font-size: $font-size-sm !default;
+$tooltip-max-width: 200px !default;
+$tooltip-color: $white !default;
+$tooltip-bg: $black !default;
+$tooltip-border-radius: $border-radius !default;
+$tooltip-opacity: 0.9 !default;
+$tooltip-padding-y: 0.25rem !default;
+$tooltip-padding-x: 0.5rem !default;
+$tooltip-margin: 0 !default;
+
+$tooltip-arrow-width: 0.8rem !default;
+$tooltip-arrow-height: 0.4rem !default;
+$tooltip-arrow-color: $tooltip-bg !default;
+
+// Links
+$link-color: theme-color('primary') !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 0 !default;
+
+//shadow
+$box-shadow-sm: rgba(#000, 0.2) 2px 2px 10px;
+
+$box-shadow: 0px 1px 3px rgba(#000, 0.2), 0px 2px 1px rgba(#000, 0.1), 0px 1px 1px rgba(#000, 0.14);
+
+$box-shadow-lg: rgba(#000, 0.2) 2px 2px 10px; ;
