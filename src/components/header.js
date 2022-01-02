@@ -35,6 +35,13 @@ const Header = ({ authService }) => {
 								shop
 							</Link>
 						</li>
+
+						<li className="nav-item">
+							<Link to="/crud" className="nav-link">
+								Crud
+							</Link>
+						</li>
+
 						<li className="nav-item">
 							<Link to="/board" className="nav-link">
 								board

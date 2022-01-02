@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
-import { useSelector, useDispatch } from 'react-redux';
+import firebase from '../../service/firebase';
 
 const ShopList = () => {
-	const { goods } = useSelector((state) => state);
+	//goods state
+	const [goods, setGoods] = useState([]);
 
-	console.log(goods); // 스토어의 상태를 확인
+	//firebase DB
+	const dbRef = firebase.database().ref('/goods');
 
+	//read
+	useEffect(() => {
+		dbRef.on('value', (snapshot) => {
+			const datas = snapshot.val();
+			const goodsData = [];
+			for (let id in datas) {
+				goodsData.push({ ...datas[id], id });
+			}
+
+			setGoods(goodsData);
+		});
+	}, []);
 	return (
 		<div className="home wrapper">
 			<section className="tab_section">

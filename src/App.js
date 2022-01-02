@@ -8,6 +8,7 @@ import Board from './pages/board/board';
 import Login from './pages/membership/login';
 import NewsPage from 'pages/news/News';
 import ShopList from 'pages/shop/shopList';
+import Crud from 'pages/shop/crud';
 
 export default function App({ store, authService }) {
 	return (
@@ -23,6 +24,11 @@ export default function App({ store, authService }) {
 					<Route path="/shop">
 						<div className="contents">
 							<ShopList />
+						</div>
+					</Route>
+					<Route path="/crud">
+						<div className="contents">
+							<Crud />
 						</div>
 					</Route>
 					<Route path="/board">
