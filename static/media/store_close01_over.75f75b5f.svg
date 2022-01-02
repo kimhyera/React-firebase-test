@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="store_close01_normal" width="42" height="42" viewBox="0 0 42 42">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <rect id="사각형_2667" width="42" height="42" fill="#ff8e8b" rx="21"/>
+    <g id="그룹_2803" transform="rotate(45 -.042 30.627)">
+        <path id="사각형_980" d="M0 0H2.352V16.467H0z" class="cls-2" transform="translate(7.057)"/>
+        <path id="사각형_981" d="M0 0H2.352V16.467H0z" class="cls-2" transform="rotate(-90 4.705 4.705)"/>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg id="icon_calendar_normal" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #707070;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="사각형_3466" data-name="사각형 3466" class="cls-1" transform="translate(0 4)">
+    <rect class="cls-3" width="26" height="22" rx="4"/>
+    <rect class="cls-4" x="0.5" y="0.5" width="25" height="21" rx="3.5"/>
+  </g>
+  <g id="사각형_3467" data-name="사각형 3467" class="cls-1" transform="translate(4)">
+    <rect class="cls-3" width="5" height="8" rx="2.5"/>
+    <rect class="cls-4" x="0.5" y="0.5" width="4" height="7" rx="2"/>
+  </g>
+  <g id="사각형_3468" data-name="사각형 3468" class="cls-1" transform="translate(17)">
+    <rect class="cls-3" width="5" height="8" rx="2.5"/>
+    <rect class="cls-4" x="0.5" y="0.5" width="4" height="7" rx="2"/>
+  </g>
+  <circle id="타원_445" data-name="타원 445" class="cls-2" cx="1" cy="1" r="1" transform="translate(6 11)"/>
+  <circle id="타원_448" data-name="타원 448" class="cls-2" cx="1" cy="1" r="1" transform="translate(6 15)"/>
+  <circle id="타원_451" data-name="타원 451" class="cls-2" cx="1" cy="1" r="1" transform="translate(6 19)"/>
+  <circle id="타원_446" data-name="타원 446" class="cls-2" cx="1" cy="1" r="1" transform="translate(12 11)"/>
+  <circle id="타원_449" data-name="타원 449" class="cls-2" cx="1" cy="1" r="1" transform="translate(12 15)"/>
+  <circle id="타원_452" data-name="타원 452" class="cls-2" cx="1" cy="1" r="1" transform="translate(12 19)"/>
+  <circle id="타원_447" data-name="타원 447" class="cls-2" cx="1" cy="1" r="1" transform="translate(18 11)"/>
+  <circle id="타원_450" data-name="타원 450" class="cls-2" cx="1" cy="1" r="1" transform="translate(18 15)"/>
+  <circle id="타원_453" data-name="타원 453" class="cls-2" cx="1" cy="1" r="1" transform="translate(18 19)"/>
+</svg>
