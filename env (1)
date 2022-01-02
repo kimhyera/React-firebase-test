@@ -1,0 +1,6 @@
+REACT_APP_NODE_ENV=development
+REACT_APP_DATA_URL=http://localhost:9000
+REACT_APP_IMG_URL=https://mannaplanetstorage.blob.core.windows.net/mannashop-img-test
+
+REACT_APP_KAKAO_ADDR_SEARCH_URL=http://dapi.kakao.com/v2/local/search/address.json
+REACT_APP_KAKAO_API_KEY=7eb09c370be704046cf7ffe3a400506f

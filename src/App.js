@@ -7,7 +7,7 @@ import Main from './pages/main';
 import Board from './pages/board/board';
 import Login from './pages/membership/login';
 import NewsPage from 'pages/news/News';
-import Shop from 'pages/shop/app';
+import ShopList from 'pages/shop/shopList';
 
 export default function App({ store, authService }) {
 	return (
@@ -22,7 +22,7 @@ export default function App({ store, authService }) {
 					</Route>
 					<Route path="/shop">
 						<div className="contents">
-							<Shop />
+							<ShopList />
 						</div>
 					</Route>
 					<Route path="/board">

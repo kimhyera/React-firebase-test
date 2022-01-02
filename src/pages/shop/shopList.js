@@ -1,21 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const ShopList = () => {
-	const [datas, setDatas] = useState([]);
+import { useSelector, useDispatch } from 'react-redux';
 
-	useEffect(() => {
-		axios
-			.get('https://shop-toy-project-default-rtdb.firebaseio.com/goods.json')
-			.then(function (response) {
-				setDatas(response.data);
-				console.log('성공', response.data);
-			})
-			.catch(function (error) {
-				// handle error
-				console.log(error);
-			});
-	}, []);
+const ShopList = () => {
+	const { goods } = useSelector((state) => state);
+
+	console.log(goods); // 스토어의 상태를 확인
 
 	return (
 		<div className="home wrapper">
@@ -38,11 +29,9 @@ const ShopList = () => {
 			<section className="sale_section mt-4">
 				<h2 className="h4">가장인기있는 모모모 </h2>
 				<ul className="sale_list d-flex">
-					{datas.map((data) => (
+					{goods.map((data) => (
 						<li key={data.id}>
-							<div className="thumb">
-								<img src="https://via.placeholder.com/92x92"></img>
-							</div>
+							<div className="thumb"></div>
 
 							<span>순위 1</span>
 

@@ -6,9 +6,7 @@ import Shop from './shop/app';
 const Main = () => {
 	return (
 		<div className="main wrapper">
-			<section className="sale_section">
-				<Shop />
-			</section>
+			<section className="sale_section">main</section>
 		</div>
 	);
 };
