@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/React-firebase-test/static/css/main.aa04d08b.chunk.css",
-    "main.js": "/React-firebase-test/static/js/main.091458a0.chunk.js",
-    "main.js.map": "/React-firebase-test/static/js/main.091458a0.chunk.js.map",
+    "main.js": "/React-firebase-test/static/js/main.566b1e2c.chunk.js",
+    "main.js.map": "/React-firebase-test/static/js/main.566b1e2c.chunk.js.map",
     "runtime-main.js": "/React-firebase-test/static/js/runtime-main.930d15be.js",
     "runtime-main.js.map": "/React-firebase-test/static/js/runtime-main.930d15be.js.map",
-    "static/js/2.e9108096.chunk.js": "/React-firebase-test/static/js/2.e9108096.chunk.js",
-    "static/js/2.e9108096.chunk.js.map": "/React-firebase-test/static/js/2.e9108096.chunk.js.map",
+    "static/js/2.fe664694.chunk.js": "/React-firebase-test/static/js/2.fe664694.chunk.js",
+    "static/js/2.fe664694.chunk.js.map": "/React-firebase-test/static/js/2.fe664694.chunk.js.map",
     "index.html": "/React-firebase-test/index.html",
     "static/css/main.aa04d08b.chunk.css.map": "/React-firebase-test/static/css/main.aa04d08b.chunk.css.map",
-    "static/js/2.e9108096.chunk.js.LICENSE.txt": "/React-firebase-test/static/js/2.e9108096.chunk.js.LICENSE.txt",
+    "static/js/2.fe664694.chunk.js.LICENSE.txt": "/React-firebase-test/static/js/2.fe664694.chunk.js.LICENSE.txt",
     "static/media/common.scss": "/React-firebase-test/static/media/store_close02_normal.b9d1ea78.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.930d15be.js",
-    "static/js/2.e9108096.chunk.js",
+    "static/js/2.fe664694.chunk.js",
     "static/css/main.aa04d08b.chunk.css",
-    "static/js/main.091458a0.chunk.js"
+    "static/js/main.566b1e2c.chunk.js"
   ]
 }
