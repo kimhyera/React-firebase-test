@@ -25,9 +25,10 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
+		"deploy": "gh-pages -d build",
+		"build": "react-scripts build && shx cp build/index.html build/404.html",
 		"eject": "react-scripts eject",
-		"predeploy": "react-scripts build",
-		"deploy": "gh-pages -d build"
+		"predeploy": "react-scripts build"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -46,5 +47,8 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"shx": "^0.3.3"
 	}
 }

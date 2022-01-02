@@ -13,7 +13,7 @@ import Crud from 'pages/shop/crud';
 export default function App({ store, authService }) {
 	return (
 		<div>
-			<BrowserRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<Header authService={authService} />
 				<Switch>
 					<Route path={['/', '/main']} exact>
