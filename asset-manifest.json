@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/React-firebase-test/static/css/main.aa04d08b.chunk.css",
-    "main.js": "/React-firebase-test/static/js/main.bd043676.chunk.js",
-    "main.js.map": "/React-firebase-test/static/js/main.bd043676.chunk.js.map",
+    "main.css": "/React-firebase-test/static/css/main.a1c69b2f.chunk.css",
+    "main.js": "/React-firebase-test/static/js/main.fa549a51.chunk.js",
+    "main.js.map": "/React-firebase-test/static/js/main.fa549a51.chunk.js.map",
     "runtime-main.js": "/React-firebase-test/static/js/runtime-main.930d15be.js",
     "runtime-main.js.map": "/React-firebase-test/static/js/runtime-main.930d15be.js.map",
-    "static/js/2.fe664694.chunk.js": "/React-firebase-test/static/js/2.fe664694.chunk.js",
-    "static/js/2.fe664694.chunk.js.map": "/React-firebase-test/static/js/2.fe664694.chunk.js.map",
+    "static/js/2.2f54d6c0.chunk.js": "/React-firebase-test/static/js/2.2f54d6c0.chunk.js",
+    "static/js/2.2f54d6c0.chunk.js.map": "/React-firebase-test/static/js/2.2f54d6c0.chunk.js.map",
     "index.html": "/React-firebase-test/index.html",
-    "static/css/main.aa04d08b.chunk.css.map": "/React-firebase-test/static/css/main.aa04d08b.chunk.css.map",
-    "static/js/2.fe664694.chunk.js.LICENSE.txt": "/React-firebase-test/static/js/2.fe664694.chunk.js.LICENSE.txt",
-    "static/media/common.scss": "/React-firebase-test/static/media/store_close02_normal.b9d1ea78.svg"
+    "static/css/main.a1c69b2f.chunk.css.map": "/React-firebase-test/static/css/main.a1c69b2f.chunk.css.map",
+    "static/js/2.2f54d6c0.chunk.js.LICENSE.txt": "/React-firebase-test/static/js/2.2f54d6c0.chunk.js.LICENSE.txt",
+    "static/media/common.scss": "/React-firebase-test/static/media/store_close02_normal.9881e172.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.930d15be.js",
-    "static/js/2.fe664694.chunk.js",
-    "static/css/main.aa04d08b.chunk.css",
-    "static/js/main.bd043676.chunk.js"
+    "static/js/2.2f54d6c0.chunk.js",
+    "static/css/main.a1c69b2f.chunk.css",
+    "static/js/main.fa549a51.chunk.js"
   ]
 }
